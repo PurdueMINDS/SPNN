@@ -37,4 +37,4 @@ lrate = 0.005
 l1_val = 0.001
 l2_val = 0.001
 test_auc = run_SPNN(train_x,train_y,test_x,test_y,mynode=unit_size,learning_rate=lrate, L1_reg=l1_val, L2_reg=l2_val, n_epochs=80000, test_size = n_test)
-print(('AUC score on testing data is %f')%(test_score))
+print(('AUC score on testing data is %f')%(test_auc))
