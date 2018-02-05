@@ -18,7 +18,9 @@ python setup.py install
 # How to run
 
 For example,
-python main.py DBLP 3 8000 4000 0 sum 0 100 0.2
+ nohup python main.py DBLP 3 8000 4000 0 100 0.2 &
+ 
+You can check logs/log-DBLP-features.out for the process.
 
 1st parameter is the Folder name of the data.
 
