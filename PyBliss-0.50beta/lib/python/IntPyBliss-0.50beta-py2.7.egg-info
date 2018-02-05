@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: IntPyBliss
+Version: 0.50beta
+Summary: This is an internal PyBliss package
+Home-page: UNKNOWN
+Author: Tommi Junttila
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: 
+        This is an internal PyBliss package.
+        Should never be used directly.
+        
+Platform: UNKNOWN
