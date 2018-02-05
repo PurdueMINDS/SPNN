@@ -17,24 +17,26 @@ python setup.py install
 
 # How to run
 
-For example,
+Example,
  nohup python main.py DBLP 3 8000 4000 0 100 0.2 &
  
 You can check logs/log-DBLP-features.out for the process.
 
-1st parameter is the Folder name of the data.
+1st parameter is the name of the data folder.
 
 2nd parameter is the size of the target subgraph.
 
 3rd parameter is the number of training examples.
 
-Last three parameter is used for improving the speed of feature generation.
+4th parameter is the number of testing examples.
 
-4th parameter is the maximum number of neighbors. If one node has nodes more than 4th parameter,
+Last three parameters are used for accelerating the speed of feature generation.
 
-it will sample this number of nodes. If the 4th parameter is 0, this function is disabled.
+5th parameter is the maximum number of neighbors. If one node has neighbors more than 5th parameter,
 
-5th and 6th parameter is used to sample the neighbors. For neighbors larger than 5th parameter, 
+it will sample this number of nodes. If the 5th parameter is 0, this function is disabled.
+
+6th and 7th parameter is used to sample the neighbors. For neighbors larger than 5th parameter, 
 
 you only sample 6th parameter proportion of the neighbors.
 
@@ -45,7 +47,7 @@ graph_1.txt, graph_2.txt, graph_3.txt are the graph files.
 First number is source node id. Second number is target node id. Third number is the edge type.
 Since DBLP is a simple graph, subgraph type can be determined just based on node type. 
 
-node_type.txt is the node type mapping.
+node_type.txt is the mapping from node id to node type.
 1 is author, 2 is topic, 3 is venue, 4 is paper.
 
 The means of the edges connnecting certain types of nodes.
