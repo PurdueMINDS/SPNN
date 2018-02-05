@@ -26,8 +26,11 @@ import sys
 sys.path.append('./PyBliss-0.50beta')
 sys.path.append('./PyBliss-0.50beta/lib/python')
 import PyBliss
+import os
 
 def get_features(dataset,k,n_exs,n_test,b,mode,N_SAMPLES,Neigh_SAMPLE=0, Neigh_PROB=0):
+    if not os.path.exists("./logs"):
+        os.makedirs("./logs")
     log = open("./logs/log-"+dataset+"-features.out","w",0)
     opt = "train"
     x_file = "./"+dataset+"/"+opt+"_x.txt"

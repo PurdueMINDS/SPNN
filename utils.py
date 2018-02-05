@@ -25,7 +25,6 @@ import PyBliss
 
 def build_bliss_graph(G):
     H = PyBliss.Graph()
-    pdb.set_trace()
     for v in G.nodes():
         H.add_vertex(str(v), int(nx.get_node_attributes(G,'type')[v]))
     for e in G.edges():
