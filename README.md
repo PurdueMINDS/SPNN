@@ -59,4 +59,4 @@ venue--topic means the the venue has this topic.
 train_x.txt and test_x.txt are the ids of the sampled subgraph. Thank Carlos Teixeira for kindly giving us early access to his subgraph sampling software
 
 
-Friendster dataset is available for download at https://www.dropbox.com/s/jergkmqib44tcxn/friendster.SPNN.tar.gz?dl=0
+Friendster dataset is available for download upon request by email to the authors.
