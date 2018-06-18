@@ -1,6 +1,6 @@
 # SPNN
-### Authors: Changping Meng, S Chandra Mouli, Bruno Ribeiro, Jennifer Neville and [Leonardo Cotta](github.com/cottascience)
-##Overview:
+### Authors: Changping Meng, S Chandra Mouli, [Bruno Ribeiro](https://www.cs.purdue.edu/homes/ribeirob/), [Jennifer Neville](https://www.cs.purdue.edu/homes/neville/) and [Leonardo Cotta](github.com/cottascience)
+## Overview:
 This is the code for AAAI2018 paper
 "Subgraph Pattern Neural Networks for High-Order Graph Evolution Prediction"
 Changping Meng, S Chandra Mouli, Bruno Ribeiro, Jennifer Neville
@@ -53,7 +53,7 @@ you only sample 6th parameter proportion of the neighbors.
 # Data
 
 ## DBLP Dataset
-This project is set to run with the DBLP dataset, included in the project's folder. If you want to use another dataset with the code, make sure it follows the same patterns, including files names that this dataset has. The data is described in what follows.
+This project is set to run with the DBLP dataset, included in the project's folder. This is a pre-processed dataset, the original one was used in Sun et. al<sup>[1](#myfootnote1)</sup>. If you want to use another dataset with the code, make sure it follows the same patterns, including files names that this dataset has. The data is described in what follows.
 
 graph_1.txt, graph_2.txt, graph_3.txt are the graph files.
 First number is source node id. Second number is target node id. Third number is the edge type.
@@ -68,9 +68,7 @@ author--venue means author has published in venue.
 author--author means these two authors have coauthored.
 venue--topic means the the venue has this topic.
 
-train_x.txt and test_x.txt are the ids of the sampled subgraph. Thank Carlos Teixeira for kindly giving us early access to his subgraph sampling software. Wang et. al[^fn1] can also be used to sample the subgraphs.
-
-[^fn1]: Wang, Pinghui, et al. "Efficiently estimating motif statistics of large networks." ACM Transactions on Knowledge Discovery from Data (TKDD) 9.2 (2014): 8.
+train_x.txt and test_x.txt are the ids of the sampled subgraph. Thank Carlos Teixeira for kindly giving us early access to his subgraph sampling software. Wang et. al<sup>[2](#myfootnote2)</sup> can also be used to sample the subgraphs.
 
 ## Friendster Dataset
 Friendster dataset is available for download under the name "friendster-public.zip" [here](https://goo.gl/8C7BU9)
@@ -89,13 +87,19 @@ The meaning of an edge here is whether two friends shared messages at the timest
 
 train_x.txt and test_x.txt are the ids of the sampled subgraphs. The method is described in SPNN paper.
 
-train_y.txt and test_y.txt are the labels of the subgraphs, (referenced by line), according to the tasks b) FriendsterB and c) FriensterC in the SPNN paper. The way to use this dataset with the SPNN code is the same as described for DBLP in the project github page: https://github.com/PurdueMINDS/SPNN
+train_y.txt and test_y.txt are the labels of the subgraphs, (referenced by line), according to the tasks b) FriendsterB and c) FriensterC in the SPNN paper. The way to use this dataset with the SPNN code is the same as described for DBLP previously. These folders are already ready to use.
 
 If you make use of any of these datasets, please cite the following paper:
 
+```console
 @inproceedings{meng2018subgraph,
 title={Subgraph Pattern Neural Networks for High-Order Graph Evolution Prediction},
 author={Meng, Changping and Mouli, S. Chandra and Ribeiro, Bruno and Neville, Jennifer},
 booktitle={AAAI},
 year={2018}
 }
+```
+
+[<a name="myfootnote1">1</a>: Sun , Yizhou, et al. "Co-author relationship prediction in heterogeneous bibliographic networks." Advances in Social Networks Analysis and Mining (ASONAM), 2011 International Conference on. IEEE, 2011.
+
+[<a name="myfootnote2">2</a>: Wang , Pinghui, et al. "Efficiently estimating motif statistics of large networks." ACM Transactions on Knowledge Discovery from Data (TKDD) 9.2 (2014): 8.
