@@ -27,7 +27,7 @@ python setup.py install
 For instance, to run the DBLP task described in the SPNN paper, you should run the following command from the project's root directory
 
 ```console
- nohup python main.py DBLP 3 8000 4000 0 100 0.2 &
+ nohup python main.py DBLP 3 8000 4000 0 100 0.2
 ```
 
 You can check the logs folder for the process outputs, files will be indexed with the dataset folder you are using.
