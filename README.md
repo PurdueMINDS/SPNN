@@ -59,4 +59,17 @@ venue--topic means the the venue has this topic.
 train_x.txt and test_x.txt are the ids of the sampled subgraph. Thank Carlos Teixeira for kindly giving us early access to his subgraph sampling software
 
 
-Friendster dataset is available for download upon request by email to the authors.
+Friendster dataset is available for download under the name "friendster-public.zip" here: ftp://ftp.cs.purdue.edu/pub/MINDS/
+
+To use Friendster data, just make sure you reference the correct directory, e.g. FriendsterB, and ajust the parameters of your task. More information about the dataset is in its README.md file. Please, refer to that.
+
+If you make use of any of these datasets, please cite the following paper:
+
+@inproceedings{meng2018subgraph,
+title={Subgraph Pattern Neural Networks for High-Order Graph Evolution Prediction},
+author={Meng, Changping and Mouli, S. Chandra and Ribeiro, Bruno and Neville, Jennifer},
+booktitle={AAAI},
+year={2018}
+}
+
+.
