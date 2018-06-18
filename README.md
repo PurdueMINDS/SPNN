@@ -12,7 +12,7 @@ Thanks Leonardo Cotta for the python version of subgraph-based feature generatio
 
 # Installation
 
-You will need PyTorch installed. The code was tested with PyTorch 0.27, which can be download [here](https://pytorch.org/)
+You will need PyTorch installed. The code was tested with PyTorch 0.27, which can be downloaded [here](https://pytorch.org/)
 
 [PyBliss](http://www.tcs.hut.fi/Software/bliss/) library is also needed. A version ready to use in MacOS and Linux systems is already included in this project, you just need to compile it by doing the following from the project's root directory:
 
@@ -100,6 +100,6 @@ year={2018}
 }
 ```
 
-[<a name="myfootnote1">1</a>: Sun , Yizhou, et al. "Co-author relationship prediction in heterogeneous bibliographic networks." Advances in Social Networks Analysis and Mining (ASONAM), 2011 International Conference on. IEEE, 2011.
+<a name="myfootnote1">1</a>: Sun , Yizhou, et al. "Co-author relationship prediction in heterogeneous bibliographic networks." Advances in Social Networks Analysis and Mining (ASONAM), 2011 International Conference on. IEEE, 2011.
 
-[<a name="myfootnote2">2</a>: Wang , Pinghui, et al. "Efficiently estimating motif statistics of large networks." ACM Transactions on Knowledge Discovery from Data (TKDD) 9.2 (2014): 8.
+<a name="myfootnote2">2</a>: Wang , Pinghui, et al. "Efficiently estimating motif statistics of large networks." ACM Transactions on Knowledge Discovery from Data (TKDD) 9.2 (2014): 8.
