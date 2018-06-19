@@ -1,5 +1,5 @@
 # SPNN
-### Authors: Changping Meng, S Chandra Mouli and [Leonardo Cotta](https://cottascience.github.io/)
+### Authors: Changping Meng and [Leonardo Cotta](https://cottascience.github.io/)
 ## Overview:
 This is the code for AAAI2018 paper
 "Subgraph Pattern Neural Networks for High-Order Graph Evolution Prediction"
