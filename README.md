@@ -81,7 +81,7 @@ FriendsterB (Figure 2(b)) and FriendsterC (Figure 2(c)) directories correspond t
 
 graph_1.txt, graph_2.txt, graph_3.txt are the graph files. First number is source node id. Second number is target node id. Third number is the edge type.
 
-node_type.txt is the mapping from node id to node type. In these datasets, every node has the same type.
+node_type.txt is the mapping from node id to node type.
 
 The meaning of an edge here is whether two friends shared messages at the timestep of the graph.
 
